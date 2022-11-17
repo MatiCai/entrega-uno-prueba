@@ -1,0 +1,430 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilos para la Pagina Principal */
+
+/* Estilos del Body INICIO */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:silver;
+}
+
+/* estilos del header INCIO */
+
+.headerPrincipal{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    filter: drop-shadow(1px 1px 3px);
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes logo {
+    to{ 
+        transform: scale(1);
+    }
+
+    from{
+        transform: scale(1.3);
+    }
+    
+}
+
+.logo{
+    position: relative;
+    height: 100px;
+    width: 100px;
+
+}
+
+.menuIndex ul{
+    list-style: none;
+    display: flex;
+}
+.menuIndex ul li:hover{
+    font-weight: bold;
+    transform: scale(0.9);  
+    transition: 0.5s;
+    filter: drop-shadow(5px 5px 3px);    
+
+}
+
+.menuIndex ul li a{
+    background-color:rgb(174, 174, 174);
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+    box-shadow: 3px 2px 3px 2px black;
+    gap: 2rem;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+
+}
+
+/* Estilos de Main INICIO */
+
+.indumentariaDeportiva{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+
+.imagenesIniciouno{
+    text-align: center;
+}
+
+.imagenesIniciodos{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.tituloNosotros{
+    padding: 25px;
+    text-align: center;
+}
+
+.parrafoNosotros{
+    text-align: left;
+    font-style: italic;        
+}
+
+
+/* Estilos de Footer INICIO */
+
+.footerInicio{
+    background-color: #535353;
+    position:relative;
+    display:block;
+    bottom: 0;
+    margin: 50px 0px 0px;
+}
+
+.politicaIndumentaria{
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    display: block;    
+    padding: 5px;
+    font-size: small;
+    text-decoration: underline;   
+}
+
+.redesIndumentaria{
+    text-align: right;
+    padding: 5px;
+    font-size: small;
+    list-style: none;
+}
+
+.copyrightInicio{
+    position: relative;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+}
+
+/* Estilos Pagina Mujeres */ 
+
+.contenido-mujer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 0.1fr;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+}
+
+/* HEADER MUJERES */
+
+.headerMujer{
+    grid-area: header;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+.inicioMujeres{
+    padding: 0px 2rem;    
+}
+
+/* MAIN MUJERES */
+
+.tituloProductos{
+    margin: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mainMujer{
+    grid-area: main;
+}
+
+.ropaMujeres{
+    display: flex;
+    justify-content: space-around;
+}
+
+.remerasMujeres{
+    display: inline;
+    margin: 2rem 0px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.calzasMujeres{
+    display: inline;
+    margin: 2rem 0px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.sectionMujer{
+    grid-area: section;
+}
+
+.imagenesMujeres{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+
+.footerMujer{
+    grid-area: footer;
+    background-color: #535353;
+    position:relative;
+    display:block;
+    bottom: 0;
+    margin: 50px 0px 0px;
+}
+
+.politicaIndumentaria-mujer{
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    display: block;    
+    padding: 0.1rem;
+    font-size: small;
+    text-decoration: underline;   
+}
+
+.redesIndumentaria-mujer{
+    text-align: right;
+    align-items: center;
+    padding: 0.1rem;
+    font-size: small;
+    list-style: none;
+}
+
+.copyrightInicio-mujer{
+    text-align: center;    
+    background-color: rgb(63, 63, 63);
+    display: block;
+    margin-block-end: 0%;    
+}
+
+/* Estilos Pagina Hombres */
+
+/* estilos del header HOMBRE */
+
+.headerHombre{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.inicioHombre{
+    padding: 0px 50px;
+    grid-area: header;
+}
+
+
+/* estilos del main HOMBRE */
+
+.titulo-productos-hombres{
+    margin: 15px;
+    padding: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.remerasHombre{
+    display: inline;
+    margin: 30px 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    grid-area: fotos;
+}
+
+.shortsHombre{
+    display: inline;
+    margin: 30px 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    grid-area: fotos;
+}
+
+.ropaHombre{
+    display: flex;
+    justify-content: space-around;
+    grid: fotos;
+}
+
+.imagenesHombres{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 40px;
+    grid-area: fotos;
+}
+
+/* estilos de footer HOMBRES */ 
+
+.footerHombre{
+    background-color: #535353;
+    position:relative;
+    display:block;
+    bottom: 0;
+    margin: 50px 0px 0px;
+    grid-area: footer;
+}
+
+.politicaIndumentaria{
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    display: block;    
+    padding: 5px;
+    font-size: small;
+    text-decoration: underline;   
+}
+
+.redesIndumentaria{
+    text-align: right;
+    padding: 5px;
+    font-size: small;
+    list-style: none;
+}
+
+.copyrightInicio{
+    position: relative;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+}
+
+
+
+/* Estilos pagina Chicos */ 
+
+/* estilos del header CHICOS */
+
+.headerChicos{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+.inicioChicos{
+    padding: 0px 50px;
+}
+
+
+/* estilos de main CHICOS */
+
+.remerasChicos{
+    display: inline;
+    margin: 30px 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.shortsChicos{
+    display: inline;
+    margin: 30px 0px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ropaChicos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenesChicos{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+
+/* Estilos Pagino Nosotros */
+
+/* estilos del header NOSOTROS */
+
+.headerNosotros{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+.inicioNosotros{
+    padding: 0px 50px;
+}
+
+.tituloNosotros{
+    text-decoration:none;
+}
+
+/* estilos del main NOSOTROS */
+
+.tituloHistoria{
+    text-align: center;
+    padding: 60px 0px 30px;
+    text-decoration: underline;
+}
+
+.textoHistoria{
+    text-align: justify;
+    text-align: center;
+    padding: 50px 50px;
+    font-style: oblique;
+}
+
+.opinion{
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.datos{
+    margin: 10px;
+    padding: 20px;
+}
